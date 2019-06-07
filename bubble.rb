@@ -36,7 +36,6 @@ def bubble_sort_by(arr)
         second_index = 1
         while second_index <= n
             if yield(arr[first_index] , arr[second_index] ) > 0
-
                 arr[first_index], arr[second_index] = arr[second_index], arr[first_index]
                 swap = false
             end
